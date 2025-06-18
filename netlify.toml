@@ -6,6 +6,7 @@
 [build.environment]
   NODE_VERSION = "20"
   NPM_FLAGS = "--legacy-peer-deps"
+  EXPO_USE_DEV_SERVER = "true"
 
 [[redirects]]
   from = "/*"
