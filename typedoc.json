@@ -1,0 +1,64 @@
+{
+  "entryPoints": [
+    "./components/**/*.tsx",
+    "./contexts/**/*.tsx",
+    "./utils/**/*.ts",
+    "./services/**/*.ts"
+  ],
+  "out": "docs",
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/__tests__/**",
+    "**/__mocks__/**"
+  ],
+  "theme": "default",
+  "name": "プロジェクトBolt API ドキュメント",
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "includeVersion": true,
+  "hideGenerator": true,
+  "categorizeByGroup": true,
+  "categoryOrder": [
+    "Components",
+    "Contexts",
+    "Utils",
+    "Services"
+  ],
+  "readme": "README.md",
+  "plugin": [
+    "typedoc-plugin-markdown"
+  ],
+  "mdEngine": "github",
+  "mdHideSources": true,
+  "mdSourceRepo": "https://github.com/your-username/project-bolt",
+  "mdSourceBranch": "main",
+  "mdSourcePath": "docs",
+  "sourceLinkTemplate": "https://github.com/your-username/project-bolt/blob/main/{path}#L{line}",
+  "navigationLinks": {
+    "GitHub": "https://github.com/your-username/project-bolt",
+    "Issues": "https://github.com/your-username/project-bolt/issues"
+  },
+  "searchInComments": true,
+  "sort": ["source-order"],
+  "visibilityFilters": {
+    "protected": false,
+    "private": false,
+    "inherited": true,
+    "external": false
+  },
+  "validation": {
+    "invalidLink": true,
+    "notExported": true
+  },
+  "toc": {
+    "enabled": true,
+    "level": 2
+  },
+  "sidebarLinks": {
+    "プロジェクト概要": "https://github.com/your-username/project-bolt#readme",
+    "開発ガイド": "https://github.com/your-username/project-bolt/blob/main/docs/DEVELOPMENT.md",
+    "コントリビューション": "https://github.com/your-username/project-bolt/blob/main/CONTRIBUTING.md"
+  }
+} 
